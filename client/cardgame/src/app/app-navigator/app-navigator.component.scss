@@ -1,0 +1,17 @@
+
+mat-nav-list {
+    padding-top: 0px;
+}
+
+mat-list-item.active
+{
+    background-color: #5555d0;
+    color: white;
+}
+.mat-nav-list .mat-list-item.mat-list-item-focus, 
+.mat-nav-list .mat-list-item:hover 
+{
+    background-color: #0a0a8e;    
+    color: white;
+}
+ 

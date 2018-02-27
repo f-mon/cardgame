@@ -1,0 +1,18 @@
+
+<mat-toolbar class="app-header">
+  
+  <button mat-icon-button 
+    *ngIf="showSidenavBtn"
+    (click)="fireToggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+  <span>EX</span>
+  <span class="fill"></span>
+  
+  <span>World Tick: {{tick}}</span>
+  <button mat-icon-button (click)="goToLogin()">
+    <mat-icon>person</mat-icon>
+  </button>
+  
+</mat-toolbar>

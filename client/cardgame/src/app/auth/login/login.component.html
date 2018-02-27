@@ -1,0 +1,11 @@
+<div>
+    Login
+
+    <div *ngIf="isLogged(); else signin_content">
+        <a href="javascript:void(0)" (click)="signOut()">Sign out</a>
+    </div>
+    <ng-template #signin_content>
+        <google-login-button></google-login-button>
+    </ng-template>
+
+</div>

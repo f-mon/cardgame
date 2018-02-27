@@ -1,0 +1,22 @@
+
+<div class="cells-viewport" cdkScrollable #cellViewport>
+    <div class="cells-space" #cellSpace>
+        
+        <ng-container *ngFor="let cell of renderedCells">
+            <cell-component
+                [zoomFactor]="zoomFactor"
+                [cell]="cell"
+                [selected]="isSelectedCell(cell)"
+                [focused]="isFocusedCell(cell)"
+                (focusRequest)="onCellFocusRequest($event)"
+                >
+            </cell-component>
+        </ng-container>
+                
+    </div>
+</div>
+
+<console-component
+    [zoomFactor]="zoomFactor"
+    [focusedCell]="getFocusedCell()">
+</console-component>

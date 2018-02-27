@@ -1,0 +1,16 @@
+
+<mat-toolbar class="board-console">
+  <span>
+      {{focusedCell?.row?.index}},
+      {{focusedCell?.col?.index}}
+  </span>
+  <span class="fill"></span>
+  <button mat-icon-button 
+    (click)="zoomIn()">
+      <mat-icon>zoom_in</mat-icon>
+  </button>
+  <button mat-icon-button 
+    (click)="zoomOut()">
+      <mat-icon>zoom_out</mat-icon>
+  </button>
+</mat-toolbar>

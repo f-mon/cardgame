@@ -1,0 +1,19 @@
+
+<mat-nav-list>
+  <mat-list-item *ngFor="let link of links"
+    [routerLink]="link.routerLink" 
+    routerLinkActive="active"
+    >
+     <a matLine>
+         {{ link.text }}
+     </a>
+     
+     <mat-icon *ngIf="link.svgIcon" 
+        [svgIcon]="link.svgIcon">
+     </mat-icon>
+     <mat-icon *ngIf="link.materialIcon">
+         {{ link.materialIcon }}
+     </mat-icon>
+     
+  </mat-list-item>
+</mat-nav-list>

@@ -1,0 +1,17 @@
+<div class="cell-container" 
+    (click)="onCellClick($event)"
+    [class.selected]="selected"
+    [class.focused]="focused"
+    [ngClass]="terrainTypeClass"
+    [ngStyle]="{'clip-path': hexClipPath }"
+    >
+    <svg 
+        [attr.width]="hexWidth"
+        [attr.height]="hexHeight"
+        >
+      <polygon class="hex" 
+        [attr.points]="hexPoints">
+      </polygon>
+    </svg>
+</div>
+        

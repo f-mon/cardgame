@@ -1,0 +1,33 @@
+<div class="fit-panel">
+
+    <div class="form-container">
+        
+      <mat-form-field>
+        <input matInput 
+            placeholder="Nome"
+            [(ngModel)]="editItem.name">
+      </mat-form-field>
+    
+      <mat-form-field>
+        <textarea matInput 
+            placeholder="Descrizione"
+            [(ngModel)]="editItem.description">
+        </textarea>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-select placeholder="Select">
+          <mat-option value="option">Option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+    </div>
+
+    <div class="main-buttons">
+        
+        <button mat-fab (click)="onConfirm()">
+            <mat-icon>check</mat-icon>
+        </button>
+        
+    </div>
+</div>

@@ -1,0 +1,50 @@
+:host {
+    display: block;
+    position: absolute;
+}
+:host.focused {
+    z-index: 20;
+    .hex {
+        stroke: red;
+        stroke-width: 2;
+    }   
+}
+:host.selected {
+    z-index: 10;
+    .cell-container .hex {
+        fill: #ff710059;
+    }
+}
+
+.cell-container {
+    position: relative;
+    
+    svg {
+        background-size: 100% 100%; 
+    }
+    &.forest svg {
+        background-image: url('../../assets/terrains/terrain-forest.png');
+    }
+    &.land svg {
+        background-image: url('../../assets/terrains/terrain-land.png');
+    }
+    &.mountain svg {
+        background-image: url('../../assets/terrains/terrain-mountain.png');
+    }
+    &.sea svg {
+        background-image: url('../../assets/terrains/terrain-sea.png');
+    }
+    
+    .hex {
+      cursor: pointer;
+      fill: transparent;
+      stroke: #8a8a8a;
+      stroke-width: 1;
+    }
+}
+.cell-container:hover {
+    .hex {
+        fill: #f4ff00a8;
+    }
+}
+

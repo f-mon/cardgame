@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+app-header {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.app-container {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app-sidenav {
+  width: 200px;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}

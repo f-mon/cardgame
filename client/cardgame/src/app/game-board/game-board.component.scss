@@ -1,0 +1,17 @@
+
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cells-viewport {
+    flex: 1;
+    overflow: scroll;
+    background-color: #212121;
+}
+
+.cells-space {
+    position: relative;
+    background-color: #212121;
+}
